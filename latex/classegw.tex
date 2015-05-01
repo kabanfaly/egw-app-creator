@@ -1,0 +1,133 @@
+\hypertarget{classegw}{
+\section{egw Class Reference}
+\label{classegw}\index{egw@{egw}}
+}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classegw_a9ba967a1fb1aaaa8f44cf9bcbf3688ae}{createApplication} (\$application\_\-name)
+\item 
+static \hyperlink{classegw_ae56eca08292f4e5f52380e6a161d6d72}{createDefaultClass} (\$application\_\-name)
+\item 
+static \hyperlink{classegw_a5875fbc00fd0375ba6c8daf923da1a26}{createSetup} (\$application\_\-name)
+\item 
+static \hyperlink{classegw_ac53872505e1ae6197000bf254fe9712b}{createHook} (\$application\_\-name)
+\item 
+static \hyperlink{classegw_afe2fbca78672c8b7359aaee7ad2951b3}{createIndex} (\$application\_\-name)
+\item 
+static \hyperlink{classegw_a4b57da58420cc69c3f68716cfed1c000}{error} ()
+\item 
+static \hyperlink{classegw_ab244791d7a1e0e3ea56698a3330e6193}{unrecognizedAction} (\$action)
+\item 
+static \hyperlink{classegw_ae6db8538d2c1211717b469b8b6d6b916}{unrecognizedProvider} (\$provider)
+\item 
+static \hyperlink{classegw_a094de8a99539ed16bfcfa02cca96ebe6}{noProviderError} ()
+\item 
+static \hyperlink{classegw_abdbb7004acfd7445fc6a09e9cfe5f325}{noProviderNameError} (\$provider\_\-type)
+\item 
+static \hyperlink{classegw_ac70cba8b05c8c26992fc0d88593ee619}{help} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of egw
+
+\begin{DoxyAuthor}{Author}
+jflr9172 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classegw_a9ba967a1fb1aaaa8f44cf9bcbf3688ae}{
+\index{egw@{egw}!createApplication@{createApplication}}
+\index{createApplication@{createApplication}!egw@{egw}}
+\subsubsection[{createApplication}]{\setlength{\rightskip}{0pt plus 5cm}static egw::createApplication (\$ {\em application\_\-name})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classegw_a9ba967a1fb1aaaa8f44cf9bcbf3688ae}
+Create a new application folder into egroupware \hypertarget{classegw_ae56eca08292f4e5f52380e6a161d6d72}{
+\index{egw@{egw}!createDefaultClass@{createDefaultClass}}
+\index{createDefaultClass@{createDefaultClass}!egw@{egw}}
+\subsubsection[{createDefaultClass}]{\setlength{\rightskip}{0pt plus 5cm}static egw::createDefaultClass (\$ {\em application\_\-name})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classegw_ae56eca08292f4e5f52380e6a161d6d72}
+Create a default class for the new application 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]\$application\_\-name \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\hypertarget{classegw_ac53872505e1ae6197000bf254fe9712b}{
+\index{egw@{egw}!createHook@{createHook}}
+\index{createHook@{createHook}!egw@{egw}}
+\subsubsection[{createHook}]{\setlength{\rightskip}{0pt plus 5cm}static egw::createHook (\$ {\em application\_\-name})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classegw_ac53872505e1ae6197000bf254fe9712b}
+Create the hook file (use to display the side box menu) for the new application 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]\$application\_\-name \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\hypertarget{classegw_afe2fbca78672c8b7359aaee7ad2951b3}{
+\index{egw@{egw}!createIndex@{createIndex}}
+\index{createIndex@{createIndex}!egw@{egw}}
+\subsubsection[{createIndex}]{\setlength{\rightskip}{0pt plus 5cm}static egw::createIndex (\$ {\em application\_\-name})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classegw_afe2fbca78672c8b7359aaee7ad2951b3}
+Create the index file for the new application 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]\$application\_\-name \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\hypertarget{classegw_a5875fbc00fd0375ba6c8daf923da1a26}{
+\index{egw@{egw}!createSetup@{createSetup}}
+\index{createSetup@{createSetup}!egw@{egw}}
+\subsubsection[{createSetup}]{\setlength{\rightskip}{0pt plus 5cm}static egw::createSetup (\$ {\em application\_\-name})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classegw_a5875fbc00fd0375ba6c8daf923da1a26}
+Create the setup file for the new application 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]\$application\_\-name \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\hypertarget{classegw_a4b57da58420cc69c3f68716cfed1c000}{
+\index{egw@{egw}!error@{error}}
+\index{error@{error}!egw@{egw}}
+\subsubsection[{error}]{\setlength{\rightskip}{0pt plus 5cm}static egw::error ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classegw_a4b57da58420cc69c3f68716cfed1c000}
+Display an error message if both action and provider are spicified \hypertarget{classegw_ac70cba8b05c8c26992fc0d88593ee619}{
+\index{egw@{egw}!help@{help}}
+\index{help@{help}!egw@{egw}}
+\subsubsection[{help}]{\setlength{\rightskip}{0pt plus 5cm}static egw::help ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classegw_ac70cba8b05c8c26992fc0d88593ee619}
+Display help for egw usage \hypertarget{classegw_a094de8a99539ed16bfcfa02cca96ebe6}{
+\index{egw@{egw}!noProviderError@{noProviderError}}
+\index{noProviderError@{noProviderError}!egw@{egw}}
+\subsubsection[{noProviderError}]{\setlength{\rightskip}{0pt plus 5cm}static egw::noProviderError ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classegw_a094de8a99539ed16bfcfa02cca96ebe6}
+Display an error message if the provider is not specified \hypertarget{classegw_abdbb7004acfd7445fc6a09e9cfe5f325}{
+\index{egw@{egw}!noProviderNameError@{noProviderNameError}}
+\index{noProviderNameError@{noProviderNameError}!egw@{egw}}
+\subsubsection[{noProviderNameError}]{\setlength{\rightskip}{0pt plus 5cm}static egw::noProviderNameError (\$ {\em provider\_\-type})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classegw_abdbb7004acfd7445fc6a09e9cfe5f325}
+Display an error message if no provider name is given 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]\$provider\_\-type type of provider \end{DoxyParams}
+\hypertarget{classegw_ab244791d7a1e0e3ea56698a3330e6193}{
+\index{egw@{egw}!unrecognizedAction@{unrecognizedAction}}
+\index{unrecognizedAction@{unrecognizedAction}!egw@{egw}}
+\subsubsection[{unrecognizedAction}]{\setlength{\rightskip}{0pt plus 5cm}static egw::unrecognizedAction (\$ {\em action})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classegw_ab244791d7a1e0e3ea56698a3330e6193}
+Display an error message if the action is not valid 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]\$action the unknown action \end{DoxyParams}
+\hypertarget{classegw_ae6db8538d2c1211717b469b8b6d6b916}{
+\index{egw@{egw}!unrecognizedProvider@{unrecognizedProvider}}
+\index{unrecognizedProvider@{unrecognizedProvider}!egw@{egw}}
+\subsubsection[{unrecognizedProvider}]{\setlength{\rightskip}{0pt plus 5cm}static egw::unrecognizedProvider (\$ {\em provider})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classegw_ae6db8538d2c1211717b469b8b6d6b916}
+Display an error message if the provider is not valid 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]\$provider the unknown provider \end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+egw.php\end{DoxyCompactItemize}
