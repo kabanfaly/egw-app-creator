@@ -212,7 +212,7 @@ class egw
      * @param string $application_name
      * @return boolean
      */
-    public static function createIndex($application_name, $application_pat='.')
+    public static function createIndex($application_name, $application_path='.')
     {
 
         if (file_exists(realpath(__DIR__) . '/files/index.php'))
@@ -283,14 +283,16 @@ if (isset($options['h']))
 {
     egw::help();
 }
-if (isset($options['c']) && isset($options['install_dir']))
+if (isset($options['c']))
 {
 
     if (!$options['c'])
     {
         egw::noApplicationName();
     }    
-
+    if(!isset($options['install_dir'])){
+        $options['install_dir'] = '.';
+    }
     try
     {
         egw::createApplication($options['c'], $options['install_dir']);
