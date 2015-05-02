@@ -12,34 +12,11 @@ application under Egroupware and how to manage it.
 
 Runnable only on Windows Linux and MacOS
 
-INSTALL (Linux & MacOS):
-------------
-1- Put the bin folder into your Egroupware root path as follow:
-    <YOUR_EGW_DIR_PATH>/bin
-
-2- Change directory:
-    cd <YOUR_EGW_DIR_PATH>/bin
-
-3- Change your classpath as follow:
-    export PATH=$PATH:<YOUR_EGW_DIR_PATH>/bin
-
-4- Create an alias as follow:
-    alias egw='egw.sh'
-
-
-INSTALL (Windows):
-1- Put the bin folder into your Egroupware root path as follow:
-    <YOUR_EGW_DIR_PATH>\bin
-
-2- Change directory:
-    cd <YOUR_EGW_DIR_PATH>\bin
-
-3- Change your classpath as follow:
-    SET PATH=%PATH%;<YOUR_EGW_DIR_PATH>\bin;<YOUR_PHP_EXECUTABLE_DIR_PATH>
-
 
 HOW DOES IT WORK?
 --------------
+Go first to the EgwAppCreator folder.
+
 For help, type:
 
 - Linux & MacOS:
@@ -47,10 +24,12 @@ For help, type:
 - windows: 
 	    php.exe -d safe_mode=Off -f "egw.php" -- -h
 
-To create a new egroupware application:
+To create a new egroupware application run command below:
+
 - Linux & MacOS:
-	    egw create application <YOUR_APPLICATION_NAME>
+	    egw -c <YOUR_APPLICATION_NAME> --install_dir=<PATH_TO_INSTALL_APPLICATION>
 - Windows:
-	    php.exe -d safe_mode=Off -f "egw.php" -- create application <YOUR_APPLICATION_NAME>
+	    php.exe -d safe_mode=Off -f "egw.php" -- -c <YOUR_APPLICATION_NAME> --install_dir=<PATH_TO_INSTALL_APPLICATION>
+
 
 
